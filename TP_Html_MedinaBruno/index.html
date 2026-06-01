@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<!-- Define que el documento usa HTML5 (versión moderna del lenguaje) -->
+
+<html lang="es">
+<!-- Idioma principal de la página: español (importante para accesibilidad y SEO) -->
+
+<head>
+<!-- ========================= CONFIGURACIÓN DE LA PÁGINA ========================= -->
+<!-- Todo lo que está acá NO se ve en la web -->
+
+    <meta charset="UTF-8">
+    <!-- Permite usar caracteres especiales como ñ, tildes, emojis -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hace la web RESPONSIVE (se adapta a celulares, tablets y PC) -->
+
+    <title>Portfolio - Bruno Medina</title>
+    <!-- Título que aparece en la pestaña del navegador -->
+
+    <meta name="description" content="Portfolio personal de Bruno Medina">
+    <!-- Descripción que usan buscadores como Google (SEO básico) -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Conecta el archivo CSS donde está todo el diseño visual -->
+
+</head>
+
+<body>
+<!-- ========================= CONTENIDO VISIBLE ========================= -->
+<!-- Todo lo que el usuario ve en la pantalla -->
+
+<!-- CONTENEDOR PRINCIPAL -->
+<div class="contenedor">
+<!-- Caja general que agrupa toda la página -->
+<!-- Sirve para centrar y organizar el contenido -->
+
+    <!-- ========================= HEADER ========================= -->
+    <header>
+    <!-- Parte superior de la página (branding + navegación) -->
+
+        <h1 class="logo">BM</h1>
+        <!-- Logo personal (iniciales del autor) -->
+        <!-- Representa identidad visual del portfolio -->
+
+        <nav>
+        <!-- Menú de navegación (enlaces externos a redes sociales) -->
+
+            <a href="https://www.linkedin.com/in/bruno-medina-127050388"
+               target="_blank"
+               rel="noopener noreferrer">
+            <!-- Link externo a LinkedIn -->
+            <!-- target="_blank" abre en nueva pestaña -->
+            <!-- rel evita riesgos de seguridad (buena práctica) -->
+               LinkedIn
+            </a>
+
+            <a href="https://github.com/Bruno941z/Medina-Bruno.git"
+               target="_blank"
+               rel="noopener noreferrer">
+            <!-- Link a GitHub (portafolio de proyectos) -->
+               GitHub
+            </a>
+
+            <a href="https://www.instagram.com/medinadanielbruno2026/tagged/"
+               target="_blank"
+               rel="noopener noreferrer">
+            <!-- Link a Instagram (red social personal) -->
+               Instagram
+            </a>
+
+        </nav>
+
+    </header>
+
+    <!-- ========================= BANNER ========================= -->
+    <section class="banner">
+    <!-- Imagen principal grande de la página -->
+    <!-- Funciona como presentación visual -->
+
+        <img src="imagenes/Que-es-el-hardware-y-para-que-sirve.jpg"
+             alt="Banner tecnológico">
+        <!-- Imagen decorativa principal -->
+        <!-- alt = texto alternativo si la imagen no carga -->
+
+    </section>
+
+    <!-- ========================= PERFIL ========================= -->
+    <section class="seccion perfil">
+    <!-- Sección de información personal del usuario -->
+
+        <img src="imagenes/Foto-de-perfil-medina-bruno.jpg"
+             alt="Foto de perfil de Bruno Medina"
+             class="foto-perfil">
+        <!-- Foto del usuario -->
+        <!-- class permite aplicar estilos CSS -->
+
+        <div class="perfil-info">
+        <!-- Contenedor de texto del perfil -->
+        <!-- Agrupa nombre, descripción y contacto -->
+
+            <h2>Bruno Medina</h2>
+            <!-- Nombre completo -->
+
+            <p class="cargo">
+                Técnico Electromecánico | Estudiante de Desarrollo de Software
+            </p>
+            <!-- Profesión / rol actual -->
+
+            <p>
+                Técnico en Equipos e Instalaciones Electromecánicas y actualmente
+                estudiante de la Tecnicatura Superior en Desarrollo de Software.
+                Interesado en desarrollo web y tecnología.
+            </p>
+            <!-- Descripción personal -->
+
+            <p>📍 Las Toscas, Santa Fe</p>
+            <!-- Ubicación -->
+
+            <p>📞 +54 3482 269129</p>
+            <!-- Número de contacto -->
+
+            <p>📧 medinadanielbruno@gmail.com</p>
+            <!-- Email -->
+
+        </div>
+
+    </section>
+
+    <!-- ========================= EXPERIENCIA ========================= -->
+    <section class="seccion">
+    <!-- Sección donde se muestran habilidades y experiencia -->
+
+        <h2>Experiencia y Conocimientos</h2>
+        <!-- Título de la sección -->
+
+        <!-- ITEM 1 -->
+        <div class="item">
+        <!-- Caja individual de experiencia -->
+
+            <div class="contenido-item">
+            <!-- Agrupa imagen + texto -->
+
+                <img src="imagenes/imagen-ilustrativa-de-un-mantenimento-de-luz.jpg"
+                     alt="Electricidad y Mecánica"
+                     class="imagen-item">
+                <!-- Imagen representativa de la experiencia -->
+
+                <div class="texto-item">
+                <!-- Contenedor del texto -->
+
+                    <h3>Electricidad y Mecánica</h3>
+                    <!-- Título de habilidad -->
+
+                    <p>
+                        Conocimientos básicos en electricidad y mantenimiento.
+                    </p>
+                    <!-- Descripción corta -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="item">
+
+            <div class="contenido-item">
+
+                <img src="imagenes/imagen-ilustrativa-de-espacio-verdes-en-mantenimiento-en-orden-y-limpieza.jpg"
+                     alt="Trabajos Generales"
+                     class="imagen-item">
+
+                <div class="texto-item">
+
+                    <h3>Trabajos Generales</h3>
+                    <!-- Experiencia secundaria -->
+
+                    <p>
+                        Limpieza, poda y mantenimiento de espacios verdes.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="item">
+
+            <div class="contenido-item">
+
+                <img src="imagenes/imagen-ilustrativa-de-proyecto-web.jpg"
+                     alt="Proyectos Web"
+                     class="imagen-item">
+
+                <div class="texto-item">
+
+                    <h3>Proyectos Académicos</h3>
+                    <!-- Experiencia en programación -->
+
+                    <p>
+                        Desarrollo de páginas web con HTML, CSS y JavaScript.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= EDUCACIÓN ========================= -->
+    <section class="seccion">
+    <!-- Sección de estudios realizados -->
+
+        <h2>Educación</h2>
+
+        <!-- ESTUDIO 1 -->
+        <div class="item-educacion">
+
+            <img src="imagenes/logo-isp-n°63-2026.png"
+                 alt="ISP N°63"
+                 class="logo-educacion">
+            <!-- Logo de la institución -->
+
+            <div class="info-educacion">
+            <!-- Información del estudio -->
+
+                <h3>ISP N°63</h3>
+
+                <p><strong>2025 - Actualidad</strong></p>
+                <!-- Fechas -->
+
+                <p class="titulo-carrera">
+                    Tecnicatura en Desarrollo de Software
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- ESTUDIO 2 -->
+        <div class="item-educacion">
+
+            <img src="imagenes/logo-eetp.390.png"
+                 alt="EETP 390"
+                 class="logo-educacion">
+
+            <div class="info-educacion">
+
+                <h3>E.E.T.P. N°390</h3>
+
+                <p><strong>2019 - 2024</strong></p>
+
+                <p class="titulo-carrera">
+                    Técnico Electromecánico
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= CURSOS ========================= -->
+    <section class="seccion">
+    <!-- Formación complementaria -->
+
+        <h2>Cursos y Capacitaciones</h2>
+
+        <ul class="lista-cursos">
+        <!-- Lista de cursos -->
+
+            <li>
+            <!-- Elemento de lista -->
+
+                <img src="imagenes/Junior-Achievement-Argentina_Positivo-1.png"
+                     alt="Junior Achievement"
+                     class="icono-curso">
+                <!-- Icono del curso -->
+
+                <div class="info-curso">
+
+                    <h3>Junior Achievement</h3>
+                    <p>2025</p>
+                    <p>Capacitación virtual.</p>
+
+                </div>
+
+            </li>
+
+            <li>
+
+                <img src="imagenes/Logo-campu-santafesino.png"
+                     alt="Congreso IT"
+                     class="icono-curso">
+
+                <div class="info-curso">
+
+                    <h3>Congreso de Informática</h3>
+                    <p>2025</p>
+                    <p>Charlas y tecnología.</p>
+
+                </div>
+
+            </li>
+
+        </ul>
+
+    </section>
+
+</div>
+
+</body>
+</html>

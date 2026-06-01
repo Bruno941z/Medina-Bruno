@@ -1,0 +1,341 @@
+/* ==================================================
+   ESTILOS GENERALES (BASE DEL SITIO)
+   Esto afecta a toda la página
+================================================== */
+
+/* Estilo general del cuerpo del sitio */
+body{
+    font-family: Arial, sans-serif; /* Tipo de letra */
+    background: #f0f0f0; /* Color de fondo gris claro */
+    margin: 0; /* Quita márgenes por defecto del navegador */
+    padding: 15px; /* Espacio interno alrededor */
+    color: #222; /* Color de texto general */
+}
+
+/* ==================================================
+   CONTENEDOR PRINCIPAL
+   Caja que envuelve todo el contenido
+================================================== */
+
+.contenedor{
+    max-width: 900px; /* Ancho máximo del sitio */
+    margin: auto; /* Centra el contenido */
+    background: white; /* Fondo blanco tipo tarjeta */
+    border: 1px solid #ccc; /* Borde gris suave */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* Sombra suave */
+}
+
+/* ==================================================
+   HEADER (ENCABEZADO SUPERIOR)
+================================================== */
+
+header{
+    background: #0066cc; /* Color azul de fondo */
+    color: white; /* Texto blanco */
+    display: flex; /* Activa flexbox */
+    justify-content: space-between; /* Logo a la izquierda, nav a la derecha */
+    align-items: center; /* Centra verticalmente */
+    padding: 15px; /* Espaciado interno */
+    flex-wrap: wrap; /* Permite que baje en pantallas chicas */
+}
+
+/* Logo circular con iniciales */
+.logo{
+    width: 70px;
+    height: 70px;
+    margin: 0;
+    border-radius: 50%; /* Lo convierte en círculo */
+    background: white;
+    color: #0066cc;
+    display: flex;
+    justify-content: center; /* Centra horizontal */
+    align-items: center; /* Centra vertical */
+    font-size: 1.5rem; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+}
+
+/* Menú de navegación */
+nav{
+    display: flex;
+    gap: 15px; /* Espacio entre enlaces */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Links del menú */
+nav a{
+    color: white;
+    text-decoration: none; /* Quita subrayado */
+    font-weight: bold;
+    transition: 0.3s; /* Animación suave */
+}
+
+/* Efecto cuando pasas el mouse */
+nav a:hover{
+    text-decoration: underline;
+}
+
+/* ==================================================
+   BANNER (IMAGEN PRINCIPAL)
+================================================== */
+
+.banner img{
+    width: 100%; /* Ocupa todo el ancho */
+    height: 250px; /* Altura fija */
+    object-fit: cover; /* Recorta sin deformar */
+    display: block; /* Quita espacio inferior raro */
+}
+
+/* ==================================================
+   SECCIONES GENERALES
+================================================== */
+
+.seccion{
+    margin: 15px; /* Separación externa */
+    padding: 15px; /* Espacio interno */
+    border: 1px solid #ddd; /* Borde suave */
+    border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Títulos de cada sección */
+.seccion h2{
+    margin-top: 0;
+    color: #0066cc; /* Azul corporativo */
+    border-bottom: 2px solid #0066cc; /* Línea inferior */
+    padding-bottom: 5px;
+}
+
+/* ==================================================
+   PERFIL PERSONAL
+================================================== */
+
+.perfil{
+    display: flex; /* Imagen + texto en fila */
+    align-items: center;
+    gap: 20px; /* Separación entre elementos */
+}
+
+/* Foto de perfil */
+.foto-perfil{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%; /* Circular */
+    object-fit: cover;
+    border: 3px solid #0066cc;
+    flex-shrink: 0;
+}
+
+/* Caja de información */
+.perfil-info{
+    flex: 1; /* Ocupa espacio restante */
+}
+
+/* Título del nombre */
+.perfil-info h2{
+    margin-top: 0;
+}
+
+/* Texto descriptivo */
+.perfil-info p{
+    line-height: 1.6; /* Espaciado entre líneas */
+    text-align: justify; /* Texto alineado prolijo */
+}
+
+/* Texto destacado (cargo) */
+.cargo{
+    color: #0066cc;
+    font-weight: bold;
+}
+
+/* ==================================================
+   EXPERIENCIA / CONOCIMIENTOS
+================================================== */
+
+/* Cada bloque de experiencia */
+.item{
+    margin-top: 20px;
+}
+
+/* Contenedor de imagen + texto */
+.contenido-item{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Imagen de cada experiencia */
+.imagen-item{
+    width: 110px;
+    height: 90px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    flex-shrink: 0;
+}
+
+/* Texto de la experiencia */
+.texto-item{
+    flex: 1;
+}
+
+/* Título experiencia */
+.texto-item h3{
+    margin: 0 0 5px 0;
+}
+
+/* Descripción experiencia */
+.texto-item p{
+    margin: 0;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* ==================================================
+   EDUCACIÓN
+================================================== */
+
+/* Bloque educación */
+.item-educacion{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Logo institución */
+.logo-educacion{
+    width: 110px;
+    height: 90px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    flex-shrink: 0;
+}
+
+/* Información educación */
+.info-educacion{
+    flex: 1;
+}
+
+/* Título escuela */
+.info-educacion h3{
+    margin: 0 0 5px 0;
+}
+
+/* Texto educación */
+.info-educacion p{
+    margin: 0;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Carrera destacada */
+.titulo-carrera{
+    font-weight: bold;
+}
+
+/* ==================================================
+   CURSOS
+================================================== */
+
+/* Lista sin puntos */
+.lista-cursos{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Cada curso */
+.lista-cursos li{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Icono curso */
+.icono-curso{
+    width: 110px;
+    height: 90px;
+    border-radius: 8px;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    flex-shrink: 0;
+}
+
+/* Info curso */
+.info-curso{
+    flex: 1;
+}
+
+/* Título curso */
+.info-curso h3{
+    margin: 0 0 5px 0;
+}
+
+/* Texto curso */
+.info-curso p{
+    margin: 0;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* ==================================================
+   RESPONSIVE (CELULARES)
+================================================== */
+
+@media (max-width: 768px){
+
+    /* Ajusta espacio general */
+    body{
+        padding: 10px;
+    }
+
+    /* Header en columna */
+    header{
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    /* Menú centrado */
+    nav{
+        justify-content: center;
+    }
+
+    /* Todo pasa a vertical */
+    .perfil,
+    .contenido-item,
+    .item-educacion,
+    .lista-cursos li{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /* Centra textos */
+    .perfil-info p,
+    .texto-item p,
+    .info-educacion p,
+    .info-curso p{
+        text-align: center;
+    }
+
+    /* Reduce tamaño imagen perfil */
+    .foto-perfil{
+        width: 110px;
+        height: 110px;
+    }
+
+    /* Reduce imágenes generales */
+    .imagen-item,
+    .logo-educacion,
+    .icono-curso{
+        width: 100px;
+        height: 80px;
+    }
+
+    /* Banner más chico */
+    .banner img{
+        height: 180px;
+    }
+}
